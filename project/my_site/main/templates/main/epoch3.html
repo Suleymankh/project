@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="epoch3.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" />
+  	
+  	<style>
+		.child {
+			position: absolute;
+			width: calc(100% - 619px);
+			top: 731px;
+			right: 310px;
+			left: 309px;
+			background-color: #cfac7b;
+			height: 118px;
+		}
+		.item {
+			position: absolute;
+			width: calc(100% - 619px);
+			top: 613px;
+			right: 310px;
+			left: 309px;
+			background-color: #cd8c59;
+			height: 118px;
+		}
+		.inner {
+			position: absolute;
+			top: 495px;
+			left: calc(50% - 411px);
+			background-color: #925632;
+			width: 821px;
+			height: 118px;
+			display: none;
+		}
+		.rectangle-div {
+			position: absolute;
+			width: calc(100% - 619px);
+			top: 495px;
+			right: 310px;
+			left: 309px;
+			background-color: #c06532;
+			height: 118px;
+			opacity: 0;
+			animation: ani 2.5s forwards;
+		}
+		@keyframes ani {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+		.div1 {
+			position: absolute;
+			top: 151px;
+			left: calc(50% - 70px);
+			font-weight: 600;
+			color: #000;
+			display: inline-block;
+			width: 140px;
+			height: 38px;
+		}
+		.line-div {
+			position: absolute;
+			width: calc(100% - 1197px);
+			top: 194px;
+			right: 599px;
+			left: 598px;
+			border-top: 4px solid #000;
+			box-sizing: border-box;
+			height: 4px;
+		}
+		.p {
+			margin: 0;
+		}
+		.div2 {
+			position: relative;
+			font-weight: 600;
+		}
+		.wrapper {
+			position: absolute;
+			top: 24px;
+			left: 17px;
+			background-color: #3aa9e9;
+			width: 203px;
+			display: none;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+			text-align: left;
+			font-size: 24px;
+			color: #fff;
+		}
+		.div3 {
+			width: 144px;
+			position: relative;
+			font-weight: 600;
+			display: inline-block;
+			flex-shrink: 0;
+		}
+		.container {
+			position: absolute;
+			top: 34px;
+			left: 974px;
+			border-radius: 27px;
+			background-color: #cfac7b;
+			width: 177px;
+			height: 58px;
+			display: none;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.div4 {
+			position: absolute;
+			top: 34px;
+			left: 1236px;
+			border-radius: 27px;
+			background-color: #cfac7b;
+			width: 177px;
+			height: 58px;
+			display: none;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		.frame-parent {
+			position: absolute;
+			top: 0px;
+			left: -17px;
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0), #fff);
+			width: 1486px;
+			height: 149px;
+			overflow: hidden;
+			text-align: center;
+			font-size: 18px;
+			color: #54260c;
+		}
+		.frame {
+			position: absolute;
+			right: 310px;
+			bottom: 71px;
+			border-radius: 12px;
+			background-color: #3aa9e9;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			cursor: pointer;
+		}
+		.frame-div {
+			position: absolute;
+			top: 0px;
+			right: 0.02px;
+			border-radius: 20px;
+			background-color: #54260c;
+			width: 146.2px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+			cursor: pointer;
+			transition-duration: 500ms;
+			transition-property: transform;
+		}
+		.frame-div:hover {
+			background-color: #cd8c59;
+			transform: scale(1.2);
+		}
+		.wrapper1 {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			border-radius: 20px;
+			background-color: #54260c;
+			width: 125.2px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+			cursor: pointer;
+			transition-duration: 500ms;
+			transition-property: transform;
+		}
+		.wrapper1:hover {
+			background-color: #cd8c59;
+			transform: scale(1.2);
+		}
+		.frame-group {
+			position: absolute;
+			top: 436px;
+			right: 126px;
+			width: 1640px;
+			height: 59px;
+		}
+		.wrapper2 {
+			position: absolute;
+			top: 39px;
+			left: 80px;
+			border-radius: 13px;
+			background-color: #3aa9e9;
+			width: 279px;
+			height: 49px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-size: 24px;
+		}
+		.div10 {
+			position: absolute;
+			top: 34px;
+			right: 56px;
+			border-radius: 27px;
+			background-color: #cd8c59;
+			width: 150px;
+			height: 40px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			padding: 10px;
+			box-sizing: border-box;
+			cursor: pointer;
+			text-align: center;
+			font-size: 14px;
+			transition-duration: 500ms;
+			transition-property: transform;
+		}
+		.div10:hover {
+			transform: scale(1.2);
+		}
+		.div {
+			width: 100%;
+			position: relative;
+			background-color: #fff;
+			height: 1080px;
+			overflow: hidden;
+			text-align: left;
+			font-size: 32px;
+			color: #fff;
+			font-family: Inter;
+		}
+		
+		
+	</style>
+  	
+</head>
+<body>
+  	
+  	<div class="div">
+    		<div class="child">
+    		</div>
+    		<div class="item">
+    		</div>
+    		<div class="inner">
+    		</div>
+    		<div class="rectangle-div">
+    		</div>
+    		<div class="div1">эпоха 3</div>
+    		<div class="line-div">
+    		</div>
+    		<div class="frame-parent">
+      			<div class="wrapper">
+        				<div class="div2">
+          					<p class="p">Археология</p>
+          					<p class="p">просто</p>
+        				</div>
+      			</div>
+      			<div class="container">
+        				<div class="div3">моя коллекция</div>
+      			</div>
+      			<div class="div4">
+        				<div class="div3">моя коллекция</div>
+      			</div>
+    		</div>
+    		<div class="frame" id="frameContainer1">
+                <div onclick="location.href='/collection3';"> Выбрать </div>
+    		</div>
+    		<div class="frame-group">
+      			<div class="frame-div" id="frameContainer">
+                    <div onclick="location.href='/epoch4';"> Вперёд </div>
+      			</div>
+      			<div class="wrapper1" id="frameContainer1">
+                    <div onclick="location.href='/epoch2';"> Назад </div>
+      			</div>
+    		</div>
+    		<div class="wrapper2" id="frameContainer2">
+                <div onclick="location.href='/';"> На главную страницу </div>
+    		</div>
+    		<div class="div10" id="container">
+      			<div class="div3">моя коллекция</div>
+    		</div>
+  	</div>
+  	
+  	
+  	
+  	
+  	<script>
+    		var frameContainer1 = document.getElementById("frameContainer1");
+    		if(frameContainer1) {
+      			frameContainer1.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var frameContainer = document.getElementById("frameContainer");
+    		if(frameContainer) {
+      			frameContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var frameContainer2 = document.getElementById("frameContainer2");
+    		if(frameContainer2) {
+      			frameContainer2.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var container = document.getElementById("container");
+    		if(container) {
+      			container.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}</script></body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+    
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" />
+  	{% load static %}
+  	
+  	<style> 
+        .p {
+            margin: 0;
+        }
+        .container a {
+            position: relative;
+            font-weight: 600;
+            text-decoration: none;
+            color: #1F86C1;
+        }
+        .wrapper {
+            position: absolute;
+            top: 24px;
+            left: 17px;
+            background-color: #3aa9e9;
+            width: 173px;
+            height: 62px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .div3 {
+            width: 144px;
+            position: relative;
+            font-weight: 600;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .div2 {
+            position: absolute;
+            top: 34px;
+            right: 73px;
+            border-radius: 27px;
+            background-color: #cd8c59;
+            width: 150px;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+            font-size: 14px;
+            transition-duration: 500ms;
+            transition-property: transform;
+        }
+        .div2:hover {
+            transform: scale(1.2);
+        }
+        .frame-parent {
+            position: absolute;
+            top: 0px;
+            left: -17px;
+            width: 1937px;
+            height: 113px;
+            overflow: hidden;
+            font-size: 16px;
+        }
+        .child {
+            position: absolute;
+            width: calc(100% + 84px);
+            top: 111px;
+            right: -56px;
+            left: -28px;
+            border-top: 4px solid #f2c099;
+            box-sizing: border-box;
+            height: 4px;
+        }
+        .component-1-child {
+            position: absolute;
+            height: 82.64%;
+            width: 103.33%;
+            top: 17.36%;
+            right: -1.67%;
+            bottom: 0%;
+            left: -1.67%;
+            background-color: #f3efed;
+        }
+        .div4 {
+            position: absolute;
+            top: 27px;
+            left: 61px;
+            font-weight: 600;
+            text-align: center;
+        }
+        .component-1-item {
+            position: absolute;
+            height: calc(100% - 339px);
+            width: calc(100% - 234px);
+            top: 160px;
+            right: 196px;
+            bottom: 179px;
+            left: 38px;
+            border-radius: 14px;
+            background-color: #fff;
+        }
+        .txt {
+            width: 100%;
+        }
+        .div5 {
+            position: absolute;
+            width: calc(100% - 307px);
+            top: 186px;
+            left: 74px;
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .container {
+            position: absolute;
+            bottom: 130px;
+            left: 64px;
+            width: 473px;
+            height: 25px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 20px;
+            color: #1f86c1;
+        }
+        .component-1-inner {
+            position: absolute;
+            height: 1.78%;
+            width: 72.14%;
+            top: -0.79%;
+            right: 28.1%;
+            bottom: 99.02%;
+            left: -0.24%;
+            border-top: 9px solid #f2c099;
+            box-sizing: border-box;
+        }
+        .component-1 {
+            position: absolute;
+            width: 100%;
+            top: 987px;
+            right: 0px;
+            left: 0px;
+            height: 507px;
+            color: #000;
+        }
+        .image-icon {
+            position: absolute;
+            width: calc(100% - 56px);
+            top: 0px;
+            right: 56px;
+            left: 0px;
+            border-radius: 58px;
+            max-width: 100%;
+            overflow: hidden;
+            height: 602px;
+            object-fit: cover;
+        }
+        .div7 {
+            position: absolute;
+            height: 24.58%;
+            width: calc(100% - 340px);
+            top: 0%;
+            left: 29px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0px 2px 0px rgba(243, 239, 237, 0.67);
+        }
+        .frame {
+            position: absolute;
+            right: 196px;
+            bottom: 86px;
+            box-shadow: 1px 5px 4px rgba(243, 239, 237, 0.67);
+            border-radius: 18px;
+            background-color: rgba(79, 29, 1, 0.84);
+            width: 195px;
+            height: 41px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: left;
+            font-size: 20px;
+            color: #f3efed;
+            transition-duration: 500ms;
+            transition-property: transform;
+        }
+        
+        .frame:hover {
+            background-color: #CD8C59;
+            transform: scale(1.2);
+            opacity: 0.85;
+        }
+        .image-parent {
+            position: absolute;
+            width: 100%;
+            top: 182px;
+            right: 0px;
+            left: 0px;
+            height: 602px;
+            overflow: hidden;
+            text-align: center;
+            color: #4f1d01;
+        }
+        .div {
+            width: 100%;
+            position: relative;
+            background-color: #fff;
+            height: 1922px;
+            overflow: hidden;
+            text-align: left;
+            font-size: 36px;
+            color: #fff;
+            font-family: Inter;
+        }
+    </style>
+</head>
+<body>
+  	
+  	<div class="div">
+    		<div class="frame-parent">
+      			<div class="wrapper">
+        				<div class="div1">
+          					<p class="p">Археология</p>
+          					<p class="p">просто</p>
+        				</div>
+      			</div>
+      			<div class="div2" id="container">
+        				<div class="div3">моя коллекция</div>
+      			</div>
+    		</div>
+    		<div class="child">
+    		</div>
+    		<div class="component-1">
+      			<div class="component-1-child">
+      			</div>
+      			<div class="div4">Что такое виртуальные археология и раскопки ?</div>
+      			<div class="component-1-item">
+      			</div>
+      			<div class="div5">
+        				<span class="txt">
+          					<p class="p">Виртуальная археология это онлайн вариант реальных мест непосредственно связанных с археологией.</p>
+          					<p class="p">&nbsp;</p>
+          					<p class="p">Виртуальные раскопки - это способ для знакомства с археологическими достижениями.</p>
+        				</span>
+      			</div>
+      			<div class="container">
+						<a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F">узнать больше про виртуальную археологию</a>
+      			</div>
+      			<div class="component-1-inner">
+      			</div>
+    		</div>
+    		<div class="image-parent">
+      			<img class="image-icon" alt="" src="{%static "main/img/image.png"%}" />
+      			
+      			<div class="div7">Узнай больше о наследстве прошлых цивилизаций и создай свою коллекцию виртуальных раскопок</div>
+      			<div class="frame" id="frameContainer">
+					<div onclick="location.href='/epoch1';"> Копать </div> 
+      			</div>
+    		</div>
+  	</div>
+  	
+  	
+  	
+  	
+  	<script>
+    		var container = document.getElementById("container");
+    		if(container) {
+      			container.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}
+    		
+    		var frameContainer = document.getElementById("frameContainer");
+    		if(frameContainer) {
+      			frameContainer.addEventListener("click", function (e) {
+        				// Add your code here
+      			});
+    		}</script>
+</body>
+</html>

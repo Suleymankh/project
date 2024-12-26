@@ -1,0 +1,207 @@
+.p {
+    margin: 0;
+}
+.div1 {
+    position: relative;
+    font-weight: 600;
+}
+.wrapper {
+    position: absolute;
+    top: 24px;
+    left: 17px;
+    background-color: #3aa9e9;
+    width: 203px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+    top: 39px;
+    left: 97px;
+    border-radius: 16px;
+    background-color: #3aa9e9;
+    width: 147px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.div3 {
+    width: 144px;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+    flex-shrink: 0;
+}
+.frame {
+    position: absolute;
+    top: 34px;
+    left: 974px;
+    border-radius: 27px;
+    background-color: #cfac7b;
+    width: 177px;
+    height: 58px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    color: #54260c;
+}
+.frame-div {
+    position: absolute;
+    top: 34px;
+    left: 1236px;
+    border-radius: 27px;
+    background-color: #cfac7b;
+    width: 177px;
+    height: 58px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    color: #54260c;
+}
+.frame-parent {
+    position: absolute;
+    top: 0px;
+    left: -17px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), #fff);
+    width: 1486px;
+    height: 149px;
+    overflow: hidden;
+}
+.child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    width: 310px;
+    height: 163.7px;
+}
+.div6 {
+    position: absolute;
+    top: 62.2px;
+    left: 78.82px;
+    font-weight: 600;
+    display: inline-block;
+    width: 27.2px;
+    height: 66.1px;
+    transform:  rotate(13.3deg);
+    transform-origin: 0 0;
+}
+.div7 {
+    position: absolute;
+    top: 31.95px;
+    left: 32.43px;
+    font-size: 64px;
+    font-weight: 600;
+    display: inline-block;
+    width: 35px;
+    height: 88.1px;
+    transform:  rotate(-5.2deg);
+    transform-origin: 0 0;
+}
+.div5 {
+    position: absolute;
+    top: 304px;
+    left: 456px;
+    width: 310px;
+    height: 163.7px;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+.div5:hover {
+    transform: scale(1.2);
+}
+.div8 {
+    position: absolute;
+    top: 304px;
+    left: 0px;
+    width: 310px;
+    height: 163.7px;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+.div8:hover {
+    transform: scale(1.2);
+}
+.div11 {
+    position: absolute;
+    top: 0px;
+    left: 912px;
+    width: 310px;
+    height: 163.7px;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+.div11:hover {
+    transform: scale(1.2);
+}
+.div14 {
+    position: absolute;
+    top: 0px;
+    left: 456px;
+    width: 310px;
+    height: 163.7px;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+.div14:hover {
+    transform: scale(1.2);
+}
+.div17 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 310px;
+    height: 163.7px;
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+.div17:hover {
+    transform: scale(1.2);
+}
+.parent {
+    position: absolute;
+    top: 360px;
+    left: 109px;
+    width: 1222px;
+    height: 467.7px;
+    font-size: 48px;
+}
+.div20 {
+    position: absolute;
+    top: 180px;
+    left: 109px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #54260c;
+}
+.div {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 1080px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+    font-family: Inter;
+}
+
